@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>einstein</title>
+</head>
+<body>
+{% extends 'basepage.html' %}
+{% block body %}
+ 
+<h2>{{ page_title }}</h2>
+ 
+<form method='POST' action='/sum'>
+<table>
+<p>Sum of two values</p>
+<tr><td>First Value:</td><td><input name="firstValue" type="TEXT" width="10"</td></tr>
+<tr><td>Second Value:</td><td><input name="secondValue" type="TEXT" width="10"</td></tr>
+</table>
+<p><input value="Calculate" type="SUBMIT"></p>
+</form>
+ 
+{% endblock %}
+</body>
+</html>
